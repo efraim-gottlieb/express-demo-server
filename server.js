@@ -1,6 +1,7 @@
 import express from "express";
 import userRoutes from './routes/usersRoutes.js'
 import commentsRoutes from './routes/commentsRoutes.js'
+import postsRoutes from './routes/postsRoutes.js'
 
 const app = express();
 const port = 8000;
@@ -13,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users", userRoutes);
+app.use("/posts", postsRoutes);
 app.use("/comments", commentsRoutes);
 
 app.listen(port, () => {

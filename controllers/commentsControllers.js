@@ -12,6 +12,8 @@ export async function getComments(req, res) {
   res.json(comments);
 }
 
+
+
 async function writeComments(comments) {
   await fs.writeFile(commentsPath, JSON.stringify(comments), null, 2);
 }
