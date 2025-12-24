@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "My First Blog Post",
+    "content": "This is the content of my first post...",
+    "authorId": 1,
+    "createdAt": "2024-01-15T10:30:00.000Z",
+    "tags": ["javascript", "tutorial"]
+  }
+]
