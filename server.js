@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({ message: "Blog API is running", version: "1.0.0" });
-  console.log("pinging root");
+  console.log(req);
 });
 
 app.use("/users", userRoutes);
