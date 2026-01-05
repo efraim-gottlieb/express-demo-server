@@ -9,8 +9,8 @@ const port = 8000;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ message: "Blog API is running", version: "1.0.0" });
-  console.log(req);
+  res.json({ message: req });
+  console.log("pinging root");
 });
 
 app.use("/users", userRoutes);
