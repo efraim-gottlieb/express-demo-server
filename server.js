@@ -9,7 +9,8 @@ const port = 8000;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ message: req });
+  const a = JSON.stringify(req)
+  res.send(a);
   console.log("pinging root");
 });
 
